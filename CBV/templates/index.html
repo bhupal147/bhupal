@@ -1,0 +1,10 @@
+{% if list %}
+    <h1>person details</h1>
+    <ul>
+    <li>
+        <a href="{% url 'GenericViews:detail' person.id %}">{{ person.name }}</a>
+    </li>
+    </ul>
+    {% else %}
+    <h1>no sorry details</h1>
+{% endif %}
